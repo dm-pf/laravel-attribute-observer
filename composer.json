@@ -1,5 +1,5 @@
 {
-    "name": "alexstewartja/laravel-attribute-observer",
+    "name": "dm-pf/laravel-attribute-observer",
     "description": "Observe (and react to) attribute changes made on Eloquent models.",
     "keywords": [
         "alexstewartja",
@@ -16,9 +16,9 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "^7.4|^8.0|^8.1",
         "spatie/laravel-package-tools": "^1.12.1",
-        "illuminate/contracts": "^7.0|^8.0|^9.0"
+        "illuminate/contracts": "^7.0|^8.0|^9.0|^10.0"
     },
     "require-dev": {
         "nunomaduro/collision": "^4.0|^5.0|^6.0|^7.0",
