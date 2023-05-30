@@ -163,6 +163,11 @@ class LaravelAttributeObserverServiceProvider extends PackageServiceProvider
             return true;
         }
 
+        // If the model is being deleted then all `deleted` events are valid
+        if ($event === 'deleted' || $event === 'deleting') {
+            return true;
+        }
+
         if (in_array($event, $postEvents)) {
             return $attribute
                 ? $model->wasChanged($attribute)
